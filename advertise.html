@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertise With us</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="advertise.html">Advertise</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main class="advertise-page">
+        <h1>Advertise With Us</h1>
+        <p>Reach thousands of new people with your ad. Fill in the form below to submit
+            your advertisement.</p>
+            <form class="ad-form" id="adForm">
+                <label for="businessName">businessName:
+                </label>
+                <input type="text"
+                id="businessName" name="businessName"
+                placeholder="Your business name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email"
+                name="email" placeholder="Your email required">
+                <label for="adDescription">Advertisement Description:</label>
+                <textarea name="adDescription" id="adDescription" placeholder="Describe
+                your advertisement" required></textarea>
+                <label for="fileUpload">Upload Image/Video (optional):</label>
+                <input type="file" id="fileUpload"
+                name="fileUpload" accept="image/*,video/*">
+                <button type="submit">Submit Advertisement</button>
+            </form>
+            <p>Or chat with us on whatsapp:
+                <a href="https://wa.me/254741769421"
+                target="_blank" class="whatsapp-chat">
+            Chat with us on whatsapp
+        </a>
+            </p>
+        </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
