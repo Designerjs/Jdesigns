@@ -3,43 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advertise With us</title>
+    <title>Advertise With Us</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
+
+    <nav>
         <a href="index.html">Home</a>
         <a href="advertise.html">Advertise</a>
         <a href="contact.html">Contact</a>
     </nav>
-    <main class="advertise-page">
-        <h1>Advertise With Us</h1>
-        <p>Reach thousands of new people with your ad. Fill in the form below to submit
-            your advertisement.</p>
-            <form class="ad-form" id="adForm">
-                <label for="businessName">businessName:
-                </label>
-                <input type="text"
-                id="businessName" name="businessName"
-                placeholder="Your business name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email"
-                name="email" placeholder="Your email required">
-                <label for="adDescription">Advertisement Description:</label>
-                <textarea name="adDescription" id="adDescription" placeholder="Describe
-                your advertisement" required></textarea>
-                <label for="fileUpload">Upload Image/Video (optional):</label>
-                <input type="file" id="fileUpload"
-                name="fileUpload" accept="image/*,video/*">
-                <button type="submit">Submit Advertisement</button>
-            </form>
-            <p>Or chat with us on whatsapp:
-                <a href="https://wa.me/254741769421"
-                target="_blank" class="whatsapp-chat">
-            Chat with us on whatsapp
-        </a>
-            </p>
-        </main>
+
+    <section>
+        <h2>Advertising Prices</h2>
+
+        <div class="pricing">
+            <div class="price-box">
+                <h3>Image Ad</h3>
+                <p>KES 500 per week</p>
+            </div>
+            <div class="price-box">
+                <h3>Video Ad</h3>
+                <p>KES 1000 per week</p>
+            </div>
+            <div class="price-box">
+                <h3>Premium Ad</h3>
+                <p>KES 2000 per week</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Submit Your Advertisement</h2>
+
+        <form action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST"
+        enctype="multipart/form-data">
+
+        <input type="text" name="name"
+        placeholder="Your Name" required>
+
+        <input type="email" name="email"
+        placeholder="Your Email" required>
+
+        <select name="ad_type" required>
+            <option value="">Select Ad Type</option>
+            <option>Image Ad - KES 500</option>
+            <option>Video Ad - KES 1000</option>
+            <option>Premium Ad - KES 2,000</option>
+        </select>
+
+        <input type="file" name="ad_file" required>
+
+        <textarea name="message"
+        placeholder="Additional instructions"></textarea>
+
+        <button type="submit">Submit Advertisement</button>
+    </form>
+    </section>
+    
     <script src="script.js"></script>
 </body>
 </html>

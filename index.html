@@ -3,58 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advertise With us @Jastones'</title>
+    <title>My Advertising Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <h1>My Advertising Website</h1>
-        <p>Grow your business with us @jastones'</p>
- </header>
- <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="advertise.html">Advertise</a>
-    <a href="contact.html">Contact</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="advertise.html">Advertise</a>
+        <a href="contact.html">Contact</a>
     </nav>
-    <main class="container">
-        <section class="video-ads">
-            <h2>Video Advertisement</h2>
-            <div class="video-box">
-            <video id="adVideo" controls muted playsinline> 
-                <source src="advideo.mp4"
-        type="video/mp4">
-        Your browser does not support video
-            </video>
-            <p id="videoCount">Views: 0</p>
-            </div>
-            <h3>Image Ads</h3>
-            <div class="ad-box">
-           <img src="ads1.jpg" alt="Image Ad 1">
-           <p class="ad-title">Ad 1</p>
-           </div>
-           <h>Image Ads</h3>
-           <div class="ad-box">
-            <img src="ads2.jpg" alt="Image Ad 2">
-            <p class="ad-title">Ad 2</p>
+
+    <section class="hero">
+        <h1>Advertise your business with us @jdesigns</h1>
+        <p>Image & Video Ads at affordable prices</p>
+    </section>
+
+    <section>
+        <h2>Featured Image Advertisement</h2>
+        <div class="image-ad">
+            <img src="image-ad.jpg" alt="Image Advertisement">
         </div>
-        <a class="cta-btn"
-        href="http://wa.me/254741769421"
+    </section>
+
+    <section>
+        <h2>Featured Video Advertisement</h2>
+        <div class="video-box">
+            <video id="adVideo" controls muted width="100%">
+                <source src="video-ad.mp4"
+                type="video/mp4">
+            </video>
+            <p>Views: <span id="viewCount">0</span></p>
+        </div>
+    </section>
+        <a href="https://wa.me/254741769421"
+        class="whatsapp-chat"
         target="_blank">
-    Advertise with us on whatsappG
-</a>
-        </section>
-        <section class="chat">
-            <h4>whatsapp Chat</h4>
-            <a href="http://wa.me/254741769421"
-            target="_blank"
-            class="whatsapp-chat">
-        Chat with us on whatsapp
-         </a>
-        </section>
-    </main>
+        Chat on whatsapp
+    </a>
     <script src="script.js"></script>
- <footer>
-    <p>© 2026 My advertising Website</p>
- </footer>
+    
 </body>
 </html>

@@ -1,260 +1,103 @@
 body {
-    font-family: 'poppins', sans-serif;
     margin: 0;
-    background: #ffffff;
-    padding-top: 60px;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #333;
 }
-.container {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-}
-header {
-    background: #0a66c2;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-.navbar {
-    position: sticky;
-    top: 0;
-    background: #0b63c9;
+
+nav {
+    background: #0d47a1;
     padding: 15px;
     text-align: center;
-    z-index: 1000;
 }
-.navbar a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-}
-.navbar a:hover {
-    text-decoration: underline;
-}
-nav {
-    background: hsl(60, 9%, 85%);
-    padding: 12px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+
 nav a {
     color: white;
-    text-decoration: none;
     margin: 0 15px;
+    text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
 }
+
 nav a:hover {
-    text-decoration: underline;
+    color: #ffeb3b;
 }
+
 .hero {
-    background: white;
-    padding: 40px;
+    background: linear-gradient(to right, #1565c0, #42a5f5);
+    color: white;
+    padding: 60px 20px;
     text-align: center;
 }
-.hero button {
-    padding: 10px 20px;
-    background: #0a13c207;
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.image-ad img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.video-box {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.price-box {
+    background: #e3f2fd;
+    padding: 20px;
+    border-radius: 12px;
+    width: 220px;
+    font-weight: bold;
+    
+}
+
+form {
+    max-width: 480px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+form input,
+form select,
+form textarea,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+form button {
+    background: #0d47a1;
     color: white;
     border: none;
     cursor: pointer;
 }
-.ads {
-    text-align: center;
-    padding: 20px;
-    .ads h3 {
-        margin-bottom: 20px;
-    }
-}
-.chat h4 {
-    margin: 0 0 8px o;
-}
-.chat {
-    padding: 10px;
-}
+
 .whatsapp-chat {
-    background: #25D366;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
     color: white;
-    padding: 10px 14px;
-    border-radius: 8px;
+    padding: 12px 18px;
+    border-radius: 30px;
     text-decoration: none;
-    display: inline-block;
     font-weight: bold;
 }
-.whatsapp-chat:hover {
-    background: #1ebe5d;
-}
-img,
-video {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-}
-.ad-image {
-    width: 90%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 10px;
-}
-.ads {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-}
-.ad-box {
-    max-width: 420px;
-    margin: 20px auto;
-    border-radius: 12px;
-    overflow: hidden;
-    padding: 10px;
-    border: 2px dashed #ccc;
-    background: #fff;
-}
-.ad-box h3 {
-    margin-bottom: 10px;
-}
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-@media (max-width: 600px) {
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-    .ad-box {
-        width: 90%;
-    }
-    .hero {
-        padding: 20px;
-    }
-    .ad-box {
-       width: 100%;
-       max-width: 420px;
-       margin: 0 auto;
-       padding: 10px;
-       border: 2px dashed #ccc;
-       border-radius: 12px;
-       background: #fff;
-       box-shadow: 0 4px 10px rgba(red, green, blue, alpha);
-     } .ad-box img {
-         width: 100%;
-        height: auto;
-        border-radius: 10px;
-        display: block;
-     } 
-     .ad-title {
-        margin-top: 10px;
-        font-weight: bold;
-     }
-       
-    .whatsapp {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #25D366;
-        color: #ffffff;
-        padding: 12px 20px;
-        border-radius: 50px;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 14px;
-        display: inline-block;
-    z-index: 9999;}
-        a.whatsapp:hover {
-            background-color: #1ebe5d;
-        }
-    }
-    .advertise-page {
-        max-width: 700px;
-        margin: 20px auto;
-        padding: 10px;
-    }
-    .ad-form {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-    }
-    .ad-form input
-    .ad-form textarea,
-    .ad-form button {
-        padding: 10px;
-        font-size: 16px;
-        border-radius: 6px;
-        border: 1px solid #ccc;
-    }
-    .ad-form button {
-        background: greenyellow;
-        color: white;
-        font-weight: bold;
-        cursor: pointer;
-        border: none;
-    }
-    .ad-form button:hover {
-        background: #1ebe5d;
-    }
-    .contacct-page {
-        max-width: 700px;
-        margin: 20px auto;
-        padding: 10px;
-    }
-    .contact-form {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-    }
-    .contact-form input,
-    .contact-form textarea,
-    .contact-form button {
-        padding: 10px;
-        font-size: 16px;
-        border-radius: 6px;
-        border: 1px solid #ccc;
-    }
-    .contact-form button {
-        background: greenyellow;
-        color: white;
-        font-weight: bold;
-        cursor: pointer;
-        border: none;
-    }
-    .contact-form button:hover {
-        background: #1ebe5d;
-    }
-    .video-ads {
-        text-align: center;
-        padding: 20px;
-    }
-    .video-box {
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 12px;
-        background: #111;
-        border-radius: 12px;
-    }
-    .video-box video {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
-    #videoCount {
-        color: #fff;
-        margin-top: 10px;
-        font-weight: bold;
-    }
-    .cta-btn {
-        display: inline-block;
-        margin-top: 15px;
-        padding: 12px 20px;
-        background: #25D366;
-        color: #fff;
-        border-radius: 25px;
-        text-decoration: none;
-        font-weight: bold;
-    }
